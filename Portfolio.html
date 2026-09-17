@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jane Tung — Portfolio</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --panel: #171a21;
+    --text: #e8e8ea;
+    --muted: #9a9ea8;
+    --accent: #6ee7c9;
+    --border: #262a33;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    padding: 60px 24px 30px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+  header h1 {
+    margin: 0 0 8px;
+    font-size: 2rem;
+    letter-spacing: -0.5px;
+  }
+  header p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 1rem;
+  }
+  header .links {
+    margin-top: 16px;
+  }
+  header .links a {
+    color: var(--accent);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9rem;
+  }
+  header .links a:hover { text-decoration: underline; }
+
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  .project {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+    margin-bottom: 40px;
+  }
+
+  .project h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+
+  .meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+    margin: 20px 0 28px;
+    padding: 20px;
+    background: var(--bg);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .meta div span.label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+  .meta div span.value {
+    font-size: 0.95rem;
+  }
+
+  video {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin: 24px 0;
+    background: #000;
+  }
+
+  .video-embed {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 24px 0;
+  }
+  .video-embed iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: 0;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin: 28px 0 10px;
+    color: var(--accent);
+  }
+
+  p { color: var(--text); }
+  ul { padding-left: 20px; color: var(--text); }
+  li { margin-bottom: 6px; }
+
+  .tag {
+    display: inline-block;
+    background: rgba(110, 231, 201, 0.1);
+    color: var(--accent);
+    border: 1px solid rgba(110, 231, 201, 0.3);
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    margin: 4px 6px 4px 0;
+  }
+
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    padding: 20px;
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Jane Tung</h1>
+  <p>UX &amp; Game Design — Singapore Institute of Technology</p>
+  <div class="links">
+    <a href="https://www.linkedin.com/in/jane-tung-b7438123b/" target="_blank">LinkedIn</a>
+    <a href="#" target="_blank">GitHub</a>
+  </div>
+</header>
+
+<main>
+
+  <div class="project">
+    <h3 style="margin-top:0;">Skills</h3>
+    <div>
+      <span class="tag">UI/UX Design</span>
+      <span class="tag">Unity (UI Toolkit)</span>
+      <span class="tag">Responsive Interface Design</span>
+      <span class="tag">QA &amp; Software Testing</span>
+      <span class="tag">User Acceptance Testing (UAT)</span>
+      <span class="tag">Requirements Gathering</span>
+      <span class="tag">Wireframing &amp; Flowcharts</span>
+      <span class="tag">Debugging</span>
+      <span class="tag">Agile / Scrum</span>
+      <span class="tag">Vendor &amp; Stakeholder Coordination</span>
+      <span class="tag">Cross-team Collaboration</span>
+      <span class="tag">Python</span>
+      <span class="tag">Java</span>
+      <span class="tag">HTML</span>
+      <span class="tag">PHP</span>
+      <span class="tag">C#</span>
+    </div>
+  </div>
+
+  <div class="project">
+    <h2>GameScope — Personalized Game Review Aggregator</h2>
+
+    <div class="meta">
+      <div><span class="label">Role</span><span class="value">UI/UX Implementation &amp; QA Testing</span></div>
+      <div><span class="label">Team</span><span class="value">5 (2 on UI/UX, 3 on system/backend)</span></div>
+      <div><span class="label">Tools</span><span class="value">Unity, UI Toolkit, C#, USS</span></div>
+      <div><span class="label">Skills</span><span class="value">Responsive UI, Software Testing, Debugging, Collaboration</span></div>
+    </div>
+
+    <div class="video-embed">
+      <iframe
+        src="https://www.youtube.com/embed/A6svvEHMNwk"
+        title="GameScope demo"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <h3>The Challenge</h3>
+    <p>
+      GameScope is a personalized video game review aggregation simulation
+      that helps users browse games based on their preferences. Rather than
+      showing a single general rating, the prototype displays both a
+      <strong>General Score</strong> (based on critic/community data) and a
+      <strong>User Score</strong> (based on the user's selected genres, tags,
+      ratings, wishlist, completed list, and favourite creators) — allowing
+      the system to recommend games in a more personalized way.
+    </p>
+
+    <h3>My Contribution</h3>
+    <p>
+      Of a 5-person team, I was one of two people responsible for the
+      UI/UX layer, while the other three built the underlying system and
+      data logic. I handled the majority of the UI/UX implementation in
+      Unity's UI Toolkit, with a teammate assisting on layout adjustments
+      and colour choices. Specifically, I:
+    </p>
+    <ul>
+      <li>Built the majority of the interface in Unity UI Toolkit, including responsive layouts and hover interactions</li>
+      <li>Integrated the team's backend data and scoring logic into the interface, connecting the data pipeline and scoring system to UI elements</li>
+      <li>Conducted QA testing throughout implementation — identifying and fixing issues including a compile error in a TextField placeholder, an unsupported CSS selector in the stylesheet, a backwards CSV data read, and a missing dictionary write in the rating logic</li>
+      <li>Converted several classes to be compatible with UI Toolkit's architecture</li>
+      <li>Aligned UI decisions with the design system — SGD price formatting, a four-tier colour-coded scoring system, a wishlist cart icon, and ratings that only unlock after game completion</li>
+    </ul>
+
+    <h3>Team Contribution</h3>
+    <p>
+      Three teammates built the underlying system — the data pipeline and
+      scoring logic. One additional teammate co-worked on UI/UX with me,
+      helping realign layout elements and adjust the colour scheme.
+    </p>
+
+    <h3>Skills Demonstrated</h3>
+    <div>
+      <span class="tag">UI/UX Design</span>
+      <span class="tag">Responsive UI Development</span>
+      <span class="tag">QA &amp; Software Testing</span>
+      <span class="tag">Debugging</span>
+      <span class="tag">Systems Integration</span>
+      <span class="tag">Cross-team Collaboration</span>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2026 Jane Tung
+</footer>
+
+</body>
+</html>
